@@ -1,0 +1,21 @@
+.prevButton,
+.nextButton{
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+    background: #D72C3E;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.icon{
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 30px;
+    
+}

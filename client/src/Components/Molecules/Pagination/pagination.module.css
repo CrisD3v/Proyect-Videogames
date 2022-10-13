@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Basick8;
+    src: url(../../../Fonts/Baskic8.otf) format('truetype');
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 11px;
+    font-family: 'Basick8';
+    user-select: none;
+}

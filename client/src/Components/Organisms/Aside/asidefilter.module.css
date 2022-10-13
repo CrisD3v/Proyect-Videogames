@@ -1,0 +1,49 @@
+.container{
+    position: absolute;
+    width: 210px;
+    height: 850px;
+    top: 114px;
+    right: 80px;
+
+    background:  #fff;
+    border-left: 2px solid #D72C3E;
+    user-select: none;
+
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.dropDownItem{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropDownItem:hover{
+    background: #D9D9D9;
+}
+
+.text{
+    font-family: 'Basic', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #D72C3E;
+
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.link{
+    text-decoration: none;
+}

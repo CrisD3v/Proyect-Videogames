@@ -1,0 +1,125 @@
+.card{
+    width: 15rem;
+    height: 18rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    background: #000 ;
+   user-select: none;
+}
+
+.cardContent{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   color: #fff;
+   font-size: 18px;
+}
+
+.cardContent .cardTitle{
+    width: 70%;
+    margin-bottom: 50px;
+    margin-left: 10px;  
+    font-weight: 700;
+    font-size: 32px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardContent .cardBody{
+    position: absolute;
+    display: flex;
+    top: 65px;
+    left: 5px;
+    margin-left: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card:hover .cardTitle,
+.card:hover .cardBody,
+.card:hover .bar{
+    opacity: 0;
+}
+
+.card:hover .description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.card:hover .description .subTitle{
+    font-size: 20px;
+    font-style: normal;
+}
+
+.card:hover .description .genre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.text{
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+.bar{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    border: none;
+    display: inline-block;
+    border-bottom-right-radius: 50rem;
+    height: 6px;
+    width: 100px;
+    margin-bottom: 10px;
+    background: #D72C3E;
+}
+
+.img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    
+}
+
+.bg{
+    display: block;
+    max-width:100%;
+    height: 18.5rem ;
+    border-radius: 1rem;
+    object-fit: cover;;
+    opacity: 0.6;
+}
+
+.card .bg{
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+}
+
+
+.card:hover .bg{
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3;
+}

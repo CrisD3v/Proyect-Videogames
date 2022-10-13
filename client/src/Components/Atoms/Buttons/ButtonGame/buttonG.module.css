@@ -1,0 +1,24 @@
+.startbtn{
+    font-family: PressStart2P;
+    font-size: 40px;
+    text-align: center;
+	display: inline-block;
+	margin:0 5px 32.5px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+    background-color: rgb(87, 80, 216);
+    text-shadow: -1px -1px black, 1px 1px rgb(74, 63, 173);
+    color: rgb(255, 255, 255);
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em rgb(61, 35, 205); 
+    cursor: pointer;
+}
+
+.startbtn:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}

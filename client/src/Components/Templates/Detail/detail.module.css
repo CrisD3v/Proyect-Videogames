@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+h1{
+    font-family: 'Michroma', sans-serif;
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(13,21,24,1) 0%, rgba(3,3,3,1) 100%);
+    height: 100vh;
+}
+
+.cardWrapper{
+  width:50rem;
+  border-radius: 40px;
+  background-image: linear-gradient(120deg,  #31565b, #20190f);
+  overflow: hidden;
+}
+
+.cardInfoOverview{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.cardInfoOverview, .cardDescription{
+    padding: 24px;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: #fff;
+}
+
+.actions .backButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 50px;
+    z-index: 1000;
+}
+
+.cardInfo p, .cardDescription p{
+    font-size: 12px;
+    opacity: 0.8;
+    color: #d7d7d7;
+}
+
+.cardInfo h1, .cardInfo h3 , .cardDescription h1{
+    color: #fff;
+}
+
+.cardInfo h3{
+    letter-spacing: 3.2px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}

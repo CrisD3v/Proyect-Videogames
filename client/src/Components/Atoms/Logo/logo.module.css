@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Basick8;
+    src: url(../../../Fonts/Baskic8.otf) format('truetype');
+}
+
+.logo{
+    position: absolute;
+    width: 147px;
+    height: 147px;
+    left: -28px;
+    top: -16px;
+    user-select: none;
+}
+
+.title{
+    position: absolute;
+    width: 55px;
+    height: 20px;
+    left: 78px;
+    top: 43px;
+
+    font-family: 'Baskic8';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #D72C3E;
+    user-select: none;
+
+}
+
+.subTitle{
+    position: absolute;
+    width: 48px;
+    height: 8px;
+    left: 82px;
+    top: 70px;
+
+    font-family: 'Baskic8';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 8px;
+
+    color: #D72C3E;
+    user-select: none;
+
+}

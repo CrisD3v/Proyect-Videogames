@@ -1,0 +1,29 @@
+@font-face {
+    font-family: PressStart2P ;
+    src: url('../../../Fonts/PressStart2P.ttf') format('truetype');
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(222, 235, 241);
+    gap: 0px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: 
+      url('http://24.media.tumblr.com/017a0b5effbb38d1142c936cc3b33202/tumblr_mm2phoks3u1rj6f00o1_1280.gif');
+      object-fit: cover;
+  
+    justify-content: center;
+    align-items: center;
+}
+
+.gif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 50px 0;
+    user-select: none;
+}

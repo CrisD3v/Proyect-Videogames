@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    background: #C22147;
+    color: #fff;
+    font-weight: 400;
+}

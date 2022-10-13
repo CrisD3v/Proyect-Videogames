@@ -1,0 +1,143 @@
+.container1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.togglerwrapper {
+    display: block;
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .togglerwrapper input[type="radio"] {
+    display: none;
+  }
+  
+  .togglerwrapper input[type="radio"]:checked+.togglerslider {
+    background-color: #FF6565;
+  }
+  
+  .togglerwrapper .togglerslider {
+    background-color: #ccc;
+    position: absolute;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  
+  .togglerwrapper .togglerknob {
+    position: absolute;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  
+.togglerwrapper.style1 input[type="radio"]:checked+.togglerslider .togglerknob {
+    left: calc(100% - 19px - 3px);
+  }
+  
+  .togglerwrapper.style1 .togglerknob {
+    width: calc(25px - 6px);
+    height: calc(25px - 6px);
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    background-color: #fff;
+}
+
+/* Checkbox2 */
+
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  height: 60px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.kscboxtags {
+  list-style: none;
+  padding: 5px;
+}
+
+.kscboxtags .list {
+  display: inline;
+}
+
+.kscboxtags .list .label{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px solid rgba(139, 139, 139, .3);
+  color: #adadad;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+}
+
+.kscboxtags .list .label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.kscboxtags .list .label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  
+  transition: transform .3s ease-in-out;
+}
+
+.kscboxtags .list .input[type="radio"]:checked + .label::before {
+ 
+  transform: rotate(-360deg);
+  transition: transform .3s ease-in-out;
+}
+
+.kscboxtags .list .input[type="radio"]:checked + .label {
+  border: 2px solid #FF0000;
+  background-color: #FF6565;
+  color: #fff;
+  transition: all .2s;
+}
+
+.kscboxtags .list .input[type="radio"] {
+  display: absolute;
+}
+.kscboxtags .list .input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.kscboxtags .list .input[type="radio"]:focus + .label {
+  border: 2px solid #CAF9FF;
+}
+
+
+.text{
+  font-family: 'Basic', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-decoration: none;
+  user-select: none;
+}

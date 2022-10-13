@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Basick8;
+    src: url(../../../../Fonts/Baskic8.otf) format('truetype');
+}
+.button{
+    position: absolute;
+    width: 100px;
+    height: 53px;
+    left: 1140px;
+    top: 27px;
+
+    background: #D72C3E;
+    border-radius: 10px 8px 100px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.text{
+    margin: 8px 20px 5px 7px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Baskic8';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
