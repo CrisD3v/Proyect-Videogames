@@ -23,7 +23,7 @@ require("dotenv").config();
 
 const { loadGenres } = require("./src/routes/Genres/getData");
 // Syncing all the models at once.
-conn.sync({ force: true }).then(async () => {
+conn.sync({ force: false }).then(async () => {
 
 /* Cargar los datos del archivo en la base de datos. */
     loadGenres(true)
