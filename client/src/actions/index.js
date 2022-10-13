@@ -17,6 +17,7 @@ import {
 } from "./types/index";
 
 const LOCALHOST = "http://localhost:3001";
+const BASE_URL = process.env.REACT_APP_API;
 
 /**
  * Es una función async que devuelve una función que envía una acción con una carga útil del
@@ -26,7 +27,7 @@ const LOCALHOST = "http://localhost:3001";
 
 export function getVideogames() {
   return async function (dispatch) {
-    const res = await axios.get(`${LOCALHOST}/videogames`)
+    const res = await axios.get(`${BASE_URL || LOCALHOST}/videogames`)
     dispatch({ type: GET_VIDEOGAMES, payload: res.data });
   }
 }
@@ -39,7 +40,7 @@ export function getVideogames() {
 
 export function getGenres() {
   return async function (dispatch) {
-    const res = await axios.get(`${LOCALHOST}/genres`)
+    const res = await axios.get(`${BASE_URL || LOCALHOST}/genres`)
     dispatch({ type: GET_GENRES, payload: res.data })
   }
 };
@@ -70,7 +71,7 @@ export function getGenres() {
 
 export function getPlatforms() {
   return async function (dispatch) {
-    const res = await axios.get(`${LOCALHOST}/platforms`)
+    const res = await axios.get(`${BASE_URL || LOCALHOST}/platforms`)
     dispatch({
       type: GET_PLATFORMS,
       payload: res.data
@@ -87,7 +88,7 @@ export function getPlatforms() {
  */
 export function getVideogamesByName(name) {
   return async function (dispatch) {
-    const res = await axios.get(`${LOCALHOST}/videogames?name=${name}`)
+    const res = await axios.get(`${BASE_URL || LOCALHOST}/videogames?name=${name}`)
     dispatch({
       type: GET_VIDEOGAMES_BY_NAME,
       payload: res.data
@@ -103,7 +104,7 @@ export function getVideogamesByName(name) {
  */
 export function getDetailVideogame(id) {
   return async function (dispatch) {
-    const res = await axios.get(`${LOCALHOST}/videogames/${id}`)
+    const res = await axios.get(`${BASE_URL || LOCALHOST}/videogames/${id}`)
     dispatch({
       type: GET_DETAIL_VIDEOGAME,
       payload: res.data
@@ -117,7 +118,7 @@ export function getDetailVideogame(id) {
  * @param payload  - {
  */
 export const postVideogame = (payload) => (dispatch) => {
-  fetch(`${LOCALHOST}/videogames`, {
+  fetch(`${BASE_URL || LOCALHOST}/videogames`, {
     method: "POST",
     body: JSON.stringify(payload),
     headers: {
